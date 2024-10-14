@@ -1,5 +1,5 @@
 {
-  "name": "@aks007/node-base",
+  "name": "@aks007/node-logger",
   "version": "1.0.0",
   "description": "NodeBase code for basic tools",
   "main": "./dist/index.js",
@@ -12,15 +12,17 @@
     "build": "tsup",
     "build-tsc": "tsc",
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "npm publish --access=public"
   },
   "repository": {
     "type": "git",
-    "url": "https://npmjs.com/aks007/NodeBase/"
+    "url": "https://npmjs.com/aks007/NodeLogger/"
   },
   "keywords": [
-    "base",
-    "node-base"
+    "logger",
+    "node-logger",
+    "winston"
   ],
   "license": "MIT",
   "devDependencies": {
