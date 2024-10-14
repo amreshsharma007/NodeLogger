@@ -1,30 +1,9 @@
 {
-  "name": "@aks007/node-logger",
-  "version": "1.0.0",
+  "dependencies": {
+    "moment": "^2.30.1",
+    "winston": "^3.14.2"
+  },
   "description": "NodeBase code for basic tools",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "tsup",
-    "build-tsc": "tsc",
-    "lint": "eslint .",
-    "test": "jest",
-    "deploy": "npm publish --access=public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://npmjs.com/aks007/NodeLogger/"
-  },
-  "keywords": [
-    "logger",
-    "node-logger",
-    "winston"
-  ],
-  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.16.1",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
@@ -40,8 +19,29 @@
     "tsup": "^7.3.0",
     "typescript": "^4.9.5"
   },
-  "dependencies": {
-    "moment": "^2.30.1",
-    "winston": "^3.14.2"
-  }
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "logger",
+    "node-logger",
+    "winston"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "name": "@aks007/logger",
+  "repository": {
+    "type": "git",
+    "url": "https://npmjs.com/aks007/NodeLogger/"
+  },
+  "scripts": {
+    "build": "tsup",
+    "build-tsc": "tsc",
+    "lint": "eslint .",
+    "test": "jest",
+    "deploy": "npm publish --access=public"
+  },
+  "types": "./dist/index.d.ts",
+  "version": "1.0.0"
 }
