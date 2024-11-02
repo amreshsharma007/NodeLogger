@@ -93,6 +93,7 @@ const createLogger = (opts: {
   enableFileLog: boolean;
   logLevel: LogLevel;
   timestampFormat?: string;
+  maxFileSize?: string;
 }): winston.Logger => {
   const transports = [];
 
@@ -127,6 +128,7 @@ const createLogger = (opts: {
           }),
           myFormat
         ),
+        maxsize: Number.parseInt(opts.maxFileSize + '') || 10000,
       })
     );
   }
